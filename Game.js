@@ -33,7 +33,12 @@ class Game {
     );
     console.log(`Your move: ${userMove}`);
     console.log(`Computer move: ${computerMove}`);
-    console.log(`You ${result}!`);
+    if (result === "It's a draw") {
+      console.log(result + "!");
+    } else {
+      console.log(`You ${result}!`);
+    }
+
     console.log(`HMAC key: ${this.cryptoFunctions.key}`);
   }
 }
